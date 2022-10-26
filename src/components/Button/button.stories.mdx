@@ -1,0 +1,46 @@
+import { Button } from './button.component';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='Components/Button' component={Button} />
+
+# Button
+
+Used for the Button
+
+<Canvas>
+  <Story
+    name='Details'
+    argTypes={{ 
+        ariaLabel: {
+            description: 'The aria-label attribute defines a string value that labels the current element. It is used for Assistive Technology when the label text is not visible on the screen.',
+            control: { type: 'text' },
+        },
+        href: {
+            description: 'The href attribute specifies the URL of the page the link goes to.',
+            control: { type: 'text' },
+        },
+        target: {
+            description: 'The target attribute specifies where to open the linked document.',
+            control: { type: 'text' },
+        },
+        text: {
+            description: 'The text of the button.',
+            control: { type: 'text' },
+        },
+    }}
+    args={{
+        ariaLabel: "Learn more about the Button component",
+        href: "https://www.example.com",
+        target: "_blank",
+        text: "Button",
+    }}
+  >
+    {(args) => (
+      <Button {...args}/>
+    )}
+  </Story>
+</Canvas>
+
+
+

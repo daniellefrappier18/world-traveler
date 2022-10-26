@@ -1,0 +1,20 @@
+.button {
+    background-color: $darkGray;
+    padding: 1rem;
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+        opacity: .9;
+        transition: opacity .2s ease-in-out;
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+
+}

@@ -1,0 +1,37 @@
+import { Badge } from './badge.component';
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs/blocks';
+
+
+<Meta title='Components/Badge' component={Badge} />
+
+# Badge
+
+Used for the Badge
+
+<Canvas>
+  <Story
+    name='Details'
+    argTypes={{ 
+        type: {
+            description: 'Type of the badge',
+            control: {
+                type: 'select',
+                options: ['international', 'domestic']
+            },
+             table: {
+                defaultValue: { summary: 'international' },
+            },
+        },
+    }}
+    args={{
+        type: 'international'
+    }}
+  >
+    {(args) => (
+      <Badge {...args}/>
+    )}
+  </Story>
+</Canvas>
+
+
+

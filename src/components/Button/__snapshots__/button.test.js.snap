@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Button renders correctly all Props 1`] = `
+<button
+  className="button"
+>
+  <a
+    aria-label="test"
+    href="https://www.google.com"
+    target="_blank"
+  >
+    test
+  </a>
+</button>
+`;

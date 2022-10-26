@@ -1,0 +1,34 @@
+.badge {
+    display: inline-flex;
+    background-color: $white;
+
+    &__chip {
+        width: 5px;
+        height: auto;
+    }
+
+    &--international {
+        .badge__chip {
+            background-color: $yellow;
+        }
+    }
+
+    &--domestic {
+        .badge__chip {
+            background-color: $blue;
+        }
+    }
+    
+    &__content {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: .5rem;
+        margin: 0;
+    }
+
+
+
+}
